@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function FeedbackOptions({ options, onLeaveFeedback }) {
     return (
-      <div>
+      <div className = "buttonRow">
         {options.map((option, index) => (
           <button key={index} onClick={() => onLeaveFeedback(index)}>
             {option}
